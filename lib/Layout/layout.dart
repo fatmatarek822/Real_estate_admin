@@ -18,6 +18,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: AnimatedContainer(
+
         transform: Matrix4.translationValues(xOffset, yOffset, 0)
           ..scale(isDrawerOpen ? 0.85 : 1.00)
           ..rotateZ(isDrawerOpen ? -50 : 0),
@@ -104,6 +105,406 @@ class _LayoutScreenState extends State<LayoutScreen> {
                                     height: 100,
                                     width: 100,
                                     image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.symmetric(horizontal: 35),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.symmetric(horizontal: 35),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.symmetric(horizontal: 35),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.symmetric(horizontal: 35),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
+                                ),
+                              ),
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  decoration: TextDecoration.none,
+                                ),)
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.symmetric(horizontal: 35),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.1),
+                                  spreadRadius: 2,
+                                  blurRadius: 5,
+                                  offset: Offset(0,0),
+                                ),
+                              ]
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                                child: Image(
+                                  height: 100,
+                                  width: 100,
+                                  image: NetworkImage('https://img.freepik.com/free-vector/business-man-call-center-customer-service-character_40876-89.jpg?w=740'),
                                 ),
                               ),
                               Text(

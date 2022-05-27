@@ -7,7 +7,11 @@ class AllPosts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-
+      body: Column(
+        children: [
+          Text('NO Posts'),
+        ],
+      ),
     );
   }
 }

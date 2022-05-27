@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:realestate_admin/Layout/layout.dart';
+import 'package:realestate_admin/home.dart';
 import 'package:realestate_admin/modules/drawer/drawer.dart';
 
 void main() {
@@ -15,14 +16,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: Scaffold(
-        body: Stack(
-          children: [
-            DrawerScreen(),
-            LayoutScreen(),
-          ],
-        ),
-      ),
+      home: Home(),
+      // Scaffold(
+      //   body: Stack(
+      //     children: [
+      //       DrawerScreen(),
+      //       LayoutScreen(),
+      //     ],
+      //   ),
+      // ),
     );
   }
 }

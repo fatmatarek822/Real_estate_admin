@@ -14,7 +14,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.brown,
+      color: Colors.amber,
       child: Padding(
         padding: EdgeInsets.only(top: 50,left: 40,bottom: 70),
         child: Column(
@@ -52,18 +52,11 @@ class _DrawerScreenState extends State<DrawerScreen> {
               children: <Widget>[
                Row(
                  children: [
-                   Icon(
-                     Icons.description,
-                   ),
+                   IconButton(onPressed: (){navigateTo(context, AllPosts());}, icon: Icon(Icons.description)),
                    SizedBox(
                      width: 8,
                    ),
-                   TextButton(onPressed: ()
-                   {
-                     navigateTo(context,AllPosts());
-                   }, child: Text('All Posts', style: TextStyle(color: Colors.white),
-                   ),
-                   ),
+                   TextButton(onPressed: (){navigateTo(context, AllPosts());}, child: Text('All Posts'),),
                  ],
                ),
                 BuildDrawer(
@@ -99,6 +92,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
       ),
     );
   }
+
 }
 
 class BuildDrawer extends StatelessWidget {
@@ -130,4 +124,25 @@ class BuildDrawer extends StatelessWidget {
       ],
     );
   }
+
+  Widget menuItem()
+  {
+    return Material(
+      child: InkWell(
+        child: Padding(
+          padding: EdgeInsets.all(15.0),
+          child: Row(
+            children: [
+              Expanded(child: Icon(Icons.ac_unit, size: 20, color: Colors.white,),
+              ),
+              Expanded(
+                flex: 1,
+                child: Text('gfddd'),)
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
 }
