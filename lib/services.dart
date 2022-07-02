@@ -172,7 +172,7 @@ class _AddServicesScreenState extends State<AddServicesScreen> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4),
                               image: DecorationImage(
-                                  image: FileImage(AppCubit.get(context).serviceImage!)
+                                  image: FileImage(AppCubit.get(context).image!)
                               )
                           ),
                         ),

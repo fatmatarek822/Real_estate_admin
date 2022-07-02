@@ -3,6 +3,7 @@ import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:realestate_admin/bundle.dart';
 import 'package:realestate_admin/category.dart';
 import 'package:realestate_admin/services.dart';
+import 'package:realestate_admin/shared/components/components.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class _HomeState extends State<Home> {
       showShadow: true,
       angle: -2.0,
       slideWidth: 200,
-      menuBackgroundColor: Colors.brown,
+     // menuBackgroundColor: Colors.lightBlueAccent,
     );
   }
 
@@ -65,11 +66,54 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.brown,
+      //  backgroundColor: Colors.brown,
         title: Text('Home'),
         centerTitle: true,
         leading: DrawerWidget(),
-
+      ),
+      body: Column(
+        children: [
+          Image(image: NetworkImage('https://thumbs.dreamstime.com/b/admin-sign-laptop-icon-stock-vector-166205404.jpg',),
+            width: double.infinity,
+            height: 200,
+          ),
+          MaterialButton(
+            onPressed: ()
+            {
+              navigateTo(context, AddBundleScreen());
+            },
+            child: Text('Add Bundle',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+          MaterialButton(
+            onPressed: ()
+            {
+              navigateTo(context, AddCategoryScreen());
+            },
+            child: Text('Add Category',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+          MaterialButton(
+            onPressed: ()
+            {
+              navigateTo(context, AddServicesScreen());
+            },
+            child: Text('Add Services',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -87,7 +131,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,

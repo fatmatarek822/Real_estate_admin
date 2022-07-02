@@ -144,14 +144,14 @@ class AppCubit extends Cubit<AppStates> {
     });
   }
 
-  File? serviceImage;
-//  var picker = ImagePicker();
+  File? image;
+ // var picker = ImagePicker();
 
   Future<void> getServiceImage() async {
     final pickedFile = await picker.getImage(source: ImageSource.gallery);
 
     if (pickedFile != null) {
-      serviceImage = File(pickedFile.path);
+      image = File(pickedFile.path);
       print(pickedFile.path);
       emit(ServiceImagePickedSuccessState());
     } else {
@@ -172,8 +172,8 @@ class AppCubit extends Cubit<AppStates> {
     emit(AddServiceImageLoadingState());
     firebase_storage.FirebaseStorage.instance
         .ref()
-        .child('Service/${Uri.file(serviceImage!.path).pathSegments.last}')
-        .putFile(serviceImage!)
+        .child('service/${Uri.file(image!.path).pathSegments.last}')
+        .putFile(image!)
         .then((value) {
       value.ref.getDownloadURL().then((value) {
         print(value);
