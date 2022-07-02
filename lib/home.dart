@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import 'package:realestate_admin/posts.dart';
+import 'package:realestate_admin/bundle.dart';
+import 'package:realestate_admin/category.dart';
+import 'package:realestate_admin/services.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -35,7 +37,13 @@ class _HomeState extends State<Home> {
         return HomeScreen(tittle: "Home",);
 
       case 1:
-        return Posts();
+        return AddCategoryScreen();
+
+      case 2:
+        return AddBundleScreen();
+
+      case 3:
+        return AddServicesScreen();
 
       default:
        return HomeScreen(tittle: "others",);
@@ -85,7 +93,9 @@ class _DrawerScreenState extends State<DrawerScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           drawerList(Icons.home, 'Home', 0),
-          drawerList(Icons.description, 'All Posts', 1),
+          drawerList(Icons.category_outlined, 'Add Category', 1),
+          drawerList(Icons.star, 'Add Bundle', 2),
+          drawerList(Icons.home_repair_service_outlined, 'Add Services', 3),
         ],
       ),
     );

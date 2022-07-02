@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 
 class AllPosts extends StatelessWidget {
@@ -9,9 +10,11 @@ class AllPosts extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children: [
-          Text('NO Posts'),
+          Text('NO Posts', style: TextStyle(color: Colors.black),),
         ],
       ),
     );
   }
 }
+
+ */
