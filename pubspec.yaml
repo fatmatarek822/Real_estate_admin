@@ -36,7 +36,8 @@ dependencies:
   flutter_zoom_drawer: ^3.0.2
   bloc: ^8.0.3
   flutter_bloc: ^8.0.1
-  image_picker: ^0.8.4+11
+  image_picker: ^0.8.5+3
+  #image_picker: ^0.8.4+11
 
 
 

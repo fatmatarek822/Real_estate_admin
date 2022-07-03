@@ -146,7 +146,7 @@ class _AddServicesScreenState extends State<AddServicesScreen> {
                       TextButton(
                         onPressed: ()
                         {
-                          AppCubit.get(context).getCategoryImage();
+                          AppCubit.get(context).getServiceImage();
                         }, child: Row(
                         children: const [
                           Icon(Icons.photo_library_outlined),
@@ -173,7 +173,7 @@ class _AddServicesScreenState extends State<AddServicesScreen> {
                               borderRadius: BorderRadius.circular(4),
                               image: DecorationImage(
                                   image: FileImage(AppCubit.get(context).image!)
-                              )
+                              ),
                           ),
                         ),
 
@@ -184,7 +184,7 @@ class _AddServicesScreenState extends State<AddServicesScreen> {
                       OutlinedButton(
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
-                            AppCubit.get(context).AddService(
+                            AppCubit.get(context).AddServiceImage(
                                companyName: companyNameController.text,
                               location: locationController.text,
                               rate: rateController.text,
@@ -195,7 +195,7 @@ class _AddServicesScreenState extends State<AddServicesScreen> {
                           }
                         },
                         child: Text(
-                          'Add',
+                          'Add Image of Service',
                         ),
                       ),
 

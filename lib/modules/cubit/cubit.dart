@@ -113,7 +113,6 @@ class AppCubit extends Cubit<AppStates> {
     });
   }
 
-
   void AddService({
     required String companyName,
     required String location,
@@ -144,8 +143,8 @@ class AppCubit extends Cubit<AppStates> {
     });
   }
 
+
   File? image;
- // var picker = ImagePicker();
 
   Future<void> getServiceImage() async {
     final pickedFile = await picker.getImage(source: ImageSource.gallery);
@@ -156,7 +155,7 @@ class AppCubit extends Cubit<AppStates> {
       emit(ServiceImagePickedSuccessState());
     } else {
       print('No image selected');
-      emit(ServiceImagePickedErrorState());
+      emit(ServiceImagePickedErrorState(toString()));
     }
   }
 
@@ -169,13 +168,13 @@ class AppCubit extends Cubit<AppStates> {
     required String Url,
 
   }) {
-    emit(AddServiceImageLoadingState());
+   // emit(AddServiceImageLoadingState());
     firebase_storage.FirebaseStorage.instance
         .ref()
         .child('service/${Uri.file(image!.path).pathSegments.last}')
         .putFile(image!)
-        .then((value) {
-      value.ref.getDownloadURL().then((value) {
+        .then((value)async {
+      await value.ref.getDownloadURL().then((value) {
         print(value);
         AddService(
           companyName: companyName,
@@ -187,13 +186,13 @@ class AppCubit extends Cubit<AppStates> {
           image: value,
         );
       }).catchError((error) {
-        print(error.toString());
-        emit(ServiceImagePickedErrorState());
+        print('Error');
+        emit(ServiceImagePickedErrorState(error.toString()));
       });
     }).catchError((error) {
-      print(error.toString());
+      print('Error');
 
-      emit(ServiceImagePickedErrorState());
+      emit(ServiceImagePickedErrorState(error.toString()));
     });
   }
 

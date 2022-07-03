@@ -21,7 +21,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
     return BlocConsumer<AppCubit, AppStates>(
       listener: (context, state)
       {
-        if (state is AddBundleSuccessState)
+        if (state is AddCategorySuccessState)
         {
           print('Send');
         }

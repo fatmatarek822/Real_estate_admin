@@ -35,7 +35,10 @@ class CategoryImagePickedErrorState extends AppStates {}
 
 class ServiceImagePickedSuccessState extends AppStates {}
 
-class ServiceImagePickedErrorState extends AppStates {}
+class ServiceImagePickedErrorState extends AppStates {
+  final String error;
+  ServiceImagePickedErrorState(this.error);
+}
 
 class AddServiceImageLoadingState extends AppStates {}
 
